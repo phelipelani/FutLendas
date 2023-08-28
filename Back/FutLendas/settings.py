@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "users",
+    "ligas",
+    "liga_infos",
+    "jogadores_rodada",
+    "rodadas",
     "user_infos",
     "rest_framework",
 ]
