@@ -4,7 +4,7 @@ import { RoutesMain } from "./Routes";
 function App() {
   return (
     <AuthenticUserProvider>
-      <RoutesMain />;
+      <RoutesMain />
     </AuthenticUserProvider>
   );
 }
