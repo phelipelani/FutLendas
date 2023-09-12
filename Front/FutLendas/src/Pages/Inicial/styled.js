@@ -26,10 +26,9 @@ export const ContentHome = styled.div`
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: #212529;
+
 `;
 export const ContentLogo = styled.div`
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
