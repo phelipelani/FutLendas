@@ -1,5 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
+export const tema = {
+  corPrimaria: "#255787",
+  corSecundaria: "#fdfdfd",
+  botao: "#069ECB",
+};
+
 export const GlobalStyle = createGlobalStyle`
 body, html {
     font-family: 'monospace';
@@ -9,19 +15,18 @@ body, html {
     box-sizing:border-box;
     padding: 0;
 
-    .login{
+    .bts{
         width: 10vw;
         height: 5vh;
-        background-color: #ff577f;
-        border: 1.2182px solid #ff577f;
+        background-color: ${tema.botao};
+        border: 1.2182px solid ${tema.botao};
         border-radius: 4px;
         cursor: pointer;
-
         font-size: 1.5vw;
-        color: #ffffff;
-        
- 
-
+        color: #ffffff;   
+    }
+    .bts:hover{
+        background-color:${tema.corPrimaria}
     }
 }
 `;

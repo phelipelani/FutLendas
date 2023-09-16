@@ -1,20 +1,22 @@
-import { useEffect, useState } from "react";
 import { Content, ContentHome, ContentLogo, Contentbtns } from "./styled";
-import { MaquinaEscrever } from "../../Components/MaquinaEscrever";
-
+import Logo from "../../../src/Assets/Comp.png";
+import LogoFL from "../../../src/Assets/Logo_Bg.gif";
 export const InicialPage = () => {
-  const text = "Onde as Lendas Jogam, e marcam Histórias";
   return (
     <ContentHome>
       <Content>
-        <ContentLogo>
-
-          <MaquinaEscrever text={text} />
-        </ContentLogo>
         <Contentbtns>
-          <button className="login" type="button">Entrar</button>
-          <button className="sign" type="button">Cadastrar</button>
+          <img src={LogoFL}></img>
+          <button className="bts" type="button">
+            Entrar
+          </button>
+          <button className="bts" type="button">
+            Cadastrar
+          </button>
         </Contentbtns>
+        <ContentLogo>
+          <img src={Logo}></img>
+        </ContentLogo>
       </Content>
     </ContentHome>
   );

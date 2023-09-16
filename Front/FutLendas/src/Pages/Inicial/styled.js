@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import Logo from "../../../public/Imagens/bg.jpg";
+import { tema } from "../../GlobalStyleds";
+
 
 export const ContentHome = styled.div`
   display: flex;
@@ -7,18 +8,15 @@ export const ContentHome = styled.div`
   justify-content: center;
   width: 100vw;
   height: 100vh;
-
+  background: linear-gradient(50deg, ${tema.corSecundaria} 50%, ${tema.corPrimaria} 50%);
 `;
 
 export const Content = styled.div`
-width: 80%;
-height: 80%;
-display: flex;
-background: #fefefe;
-border-radius: 1rem;
-
-
-`
+  width: 80%;
+  height: 80%;
+  padding: 1rem;
+  display: flex;
+`;
 export const ContentLogo = styled.div`
   padding: 10px;
   display: flex;
@@ -26,22 +24,17 @@ export const ContentLogo = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 50%;
+  width: 55%;
   height: 100%;
-  background-image:url(${Logo});
-  background-color: #333;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   img {
-    width: 80%;
-    height: 60%;
+    width: 60%;
+    height: 100%;
     object-fit: cover;
   }
 `;
 export const Contentbtns = styled.div`
   gap: 10px;
-  width: 40%;
+  width: 45%;
   height: 100%;
   display: flex;
   flex-direction: column;
