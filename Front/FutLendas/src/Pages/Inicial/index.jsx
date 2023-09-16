@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Logo from "../../../public/Imagens/Logo_Index.gif";
 import { Content, ContentHome, ContentLogo, Contentbtns } from "./styled";
 import { MaquinaEscrever } from "../../Components/MaquinaEscrever";
 
@@ -9,7 +8,7 @@ export const InicialPage = () => {
     <ContentHome>
       <Content>
         <ContentLogo>
-          <img src={Logo} alt="Logo Fut Lendas" />
+
           <MaquinaEscrever text={text} />
         </ContentLogo>
         <Contentbtns>
