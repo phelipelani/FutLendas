@@ -1,12 +1,13 @@
 import { styled } from "styled-components";
 
 export const MaquinaEscreverStyle = styled.p`
-    font-size: 24px;
+
+    width: 80%;
+    font-size: 1.5vw;
     font-family: monospace;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 2px solid #333; /* Efeito de cursor intermitente */
-    padding-right: 8px;
+    padding: 24px;
     animation: blink-caret 0.75s step-end infinite;
   }
   @keyframes blink-caret {
