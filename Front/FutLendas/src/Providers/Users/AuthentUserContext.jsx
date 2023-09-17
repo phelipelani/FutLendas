@@ -7,7 +7,9 @@ export const AuthenticUserContext = createContext({});
 
 // eslint-disable-next-line react/prop-types
 export const AuthenticUserProvider = ({ children }) => {
-  const [modalOpen, setModalOpen] = useState<boolean>(false);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalClose, setmodalClose] = useState(false);
+
   const [loading, setLoading] = useState(true);
   const [lod, setLod] = useState(false);
   const [usuario, setUsuario] = useState(null);
