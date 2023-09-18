@@ -4,6 +4,7 @@ export const tema = {
   corPrimaria: "#255787",
   corSecundaria: "#fdfdfd",
   botao: "#069ECB",
+  bk:"#3DF2A8"
 };
 
 export const GlobalStyle = createGlobalStyle`

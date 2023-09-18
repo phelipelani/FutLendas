@@ -3,6 +3,7 @@ import { AuthenticUserContext } from "../../../Providers/Users/AuthentUserContex
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { LogSchema } from "./LoginSchema";
+import { TextField } from "@mui/material";
 
 export const FormLogin = () => {
   const { UserLogin, setLod, lod } = useContext(AuthenticUserContext);
@@ -20,27 +21,28 @@ export const FormLogin = () => {
   return (
     <form onSubmit={handleSubmit(submit)}>
       <h2>Login</h2>
-      <div id="email">
-        <label htmlFor="email">E-mail</label>
-        <imput
+      <div id="usuario">
+        <TextField
           disabled={lod}
-          type="email"
-          {...register("email")}
-          placeholder="Digite seu email aqui"
-        ></imput>
-        {errors.email && <h5>{errors.email.message}</h5>}
+          label="usuario"
+          placeholder="Digite seu usuario aqui"
+          variant="standard"
+          {...register("usuario")}
+        />
+        {errors.usuario && <h5>{errors.usuario.message}</h5>}
       </div>
-      <div id="password">
-        <label htmlFor="senha">Senha</label>
-        <imput
+      <div id="senha">
+        <TextField
+          label="Senha"
+          variant="standard"
           type="password"
           disabled={lod}
-          {...register("password")}
+          {...register("senha")}
           placeholder="Digite sua senha aqui"
-        ></imput>
-        {errors.password && <h5>{errors.password.message}</h5>}
+        />
+        {errors.senha && <h5>{errors.senha.message}</h5>}
       </div>
-      <button type="submit" disabled={lod}>
+      <button className="bts" type="submit" disabled={lod}>
         {" "}
         {lod ? "Entrando ..." : "Entrar"}{" "}
       </button>

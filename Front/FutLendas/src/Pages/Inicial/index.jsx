@@ -1,15 +1,20 @@
 import { Content, ContentHome, ContentLogo, Contentbtns } from "./styled";
 import Logo from "../../../src/Assets/Comp.png";
 import LogoFL from "../../../src/Assets/Logo_Bg.gif";
+import TextField from "@mui/material/TextField";
+import { FormLogin } from "../../Components/Forms/Login";
 export const InicialPage = () => {
   return (
     <ContentHome>
       <Content>
         <Contentbtns>
           <img src={LogoFL}></img>
-          <button className="bts" type="button">
+          <FormLogin/>
+        
+
+          {/* <button className="bts" type="button">
             Entrar
-          </button>
+          </button> */}
           <button className="bts" type="button">
             Cadastrar
           </button>
