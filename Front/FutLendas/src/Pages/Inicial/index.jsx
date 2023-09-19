@@ -9,8 +9,7 @@ export const InicialPage = () => {
       <Content>
         <Contentbtns>
           <img src={LogoFL}></img>
-          <FormLogin/>
-        
+          <FormLogin />
 
           {/* <button className="bts" type="button">
             Entrar
