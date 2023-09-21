@@ -1,10 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 export const tema = {
-  corPrimaria: "#255787",
+  corPrimaria: "rgba(37 87 135)",
   corSecundaria: "#fdfdfd",
   botao: "#069ECB",
-  bk:"#3DF2A8"
+  bk:"#3DF2A8",
+  text:"#FFE600"
 };
 
 export const GlobalStyle = createGlobalStyle`

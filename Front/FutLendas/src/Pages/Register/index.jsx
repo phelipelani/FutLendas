@@ -1,13 +1,16 @@
 import { FormRegister } from "../../Components/Forms/Register";
+import { DivImgContainer, MainContainer } from "./styled";
+
 
 export const RegisterPage = () => {
   return (
-    <main>
-      <img src="" alt="" />
-      <div>
-        <h1>Register</h1>
-        <FormRegister />
-      </div>
-    </main>
+    <MainContainer>
+      <DivImgContainer>
+        <aside>
+          <h1>Register</h1>
+          {/* <FormRegister /> */}
+        </aside>
+      </DivImgContainer>
+    </MainContainer>
   );
 };

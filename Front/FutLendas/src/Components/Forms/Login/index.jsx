@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { LogSchema } from "./LoginSchema";
 import { TextField } from "@mui/material";
+import { FormStyle } from "./styled";
 
 export const FormLogin = () => {
   const { UserLogin, setLod, lod } = useContext(AuthenticUserContext);
@@ -19,7 +20,7 @@ export const FormLogin = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(submit)}>
+    <FormStyle onSubmit={handleSubmit(submit)}>
       <h2>Login</h2>
       <div id="usuario">
         <TextField
@@ -42,10 +43,10 @@ export const FormLogin = () => {
         />
         {errors.senha && <h5>{errors.senha.message}</h5>}
       </div>
-      <button className="bts" type="submit" disabled={lod}>
+      <button className="bts btnLogin" type="submit" disabled={lod}>
         {" "}
         {lod ? "Entrando ..." : "Entrar"}{" "}
       </button>
-    </form>
+    </FormStyle>
   );
 };

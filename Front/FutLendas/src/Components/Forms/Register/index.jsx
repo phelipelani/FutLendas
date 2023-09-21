@@ -25,7 +25,7 @@ export const FormRegister = () => {
   //   // Aqui você pode adicionar o código para enviar a foto para o servidor, se necessário.
   // };
   return (
-    <FormControl>
+    <FormRegister>
       <div >
         <TextField
           label="Usuario"
@@ -69,6 +69,6 @@ export const FormRegister = () => {
         />
       </div>
       <OptionRegister />
-    </FormControl>
+    </FormRegister>
   );
 };

@@ -10,10 +10,7 @@ export const InicialPage = () => {
         <Contentbtns>
           <img src={LogoFL}></img>
           <FormLogin />
-
-          {/* <button className="bts" type="button">
-            Entrar
-          </button> */}
+          <h5>Ainda não possui conta?</h5>
           <button className="bts" type="button">
             Cadastrar
           </button>

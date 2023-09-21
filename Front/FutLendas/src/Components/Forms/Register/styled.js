@@ -1,18 +1,14 @@
 import styled from "styled-components";
 import { tema } from "../../GlobalStyleds";
 
-export const ContentHome = styled.div`
+export const FormRegister = styled.div`
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(
-    50deg,
-    ${tema.corSecundaria} 50%,
-    ${tema.corPrimaria} 50%
-  );
+
 `;
 
 export const Content = styled.div`
