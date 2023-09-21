@@ -38,8 +38,9 @@ export const ContentLogo = styled.div`
   }
 `;
 export const Contentbtns = styled.div`
+  gap: 5px;
   width: 50%;
-  height: 100%;
+  height: 86%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -53,6 +54,5 @@ export const Contentbtns = styled.div`
   }
   h5 {
     margin: 0;
-    padding: 0.3rem;
   }
 `;

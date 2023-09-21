@@ -1,7 +1,6 @@
-import { FormControl, TextField } from "@mui/material";
-import { useState } from "react";
-import { AuthenticUserContext } from "../../../Providers/Users/AuthentUserContext";
+import { TextField } from "@mui/material";
 import { OptionRegister } from "../Posicao";
+import { FormRegisterStyle } from "./styled";
 
 export const FormRegister = () => {
   // const { lod, setLod, Userregister } = useContext(AuthenticUserContext);
@@ -25,20 +24,20 @@ export const FormRegister = () => {
   //   // Aqui você pode adicionar o código para enviar a foto para o servidor, se necessário.
   // };
   return (
-    <FormRegister>
+    <FormRegisterStyle>
       <div >
         <TextField
           label="Usuario"
           variant="standard"
           type="text"
           // disabled={lod}
-          // {...register("Usuario")}
+          // {...register("usuario")}
           placeholder="Digite seu Usuario aqui"
         />
       </div>
       <div>
         <TextField
-          label="email"
+          label="E-mail"
           variant="standard"
           type="email"
           // disabled={lod}
@@ -68,7 +67,7 @@ export const FormRegister = () => {
           // accept="image/*"
         />
       </div>
-      <OptionRegister />
-    </FormRegister>
+
+    </FormRegisterStyle>
   );
 };
