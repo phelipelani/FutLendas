@@ -7,7 +7,7 @@ export const tema = {
   bk: "#3DF2A8",
   text: "#FFE600",
   corPrimariaDesfoque: "rgba(0, 46, 138, 0.5)",
-  corSecundariaDesfoque: "rgba(200, 200, 200, 0.5)",
+  preto: "rgba(0, 0, 0, 1)",
 
 };
 

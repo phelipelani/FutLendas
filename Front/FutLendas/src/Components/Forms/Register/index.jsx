@@ -1,8 +1,15 @@
 import { TextField } from "@mui/material";
 import { OptionRegister } from "../Posicao";
-import { FormRegisterStyle } from "./styled";
+import { ButtonLoginStyle, DivBtsRegisterStyle, DivImputsStyle, FormRegisterStyle } from "./styled";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const FormRegister = () => {
+  const navigate = useNavigate();
+
+  function click() {
+    navigate("/");
+  }
   // const { lod, setLod, Userregister } = useContext(AuthenticUserContext);
   // const {
   //   register,
@@ -25,8 +32,9 @@ export const FormRegister = () => {
   // };
   return (
     <FormRegisterStyle>
-      <div >
+      <DivImputsStyle>
         <TextField
+        fullWidth
           label="Usuario"
           variant="standard"
           type="text"
@@ -34,9 +42,10 @@ export const FormRegister = () => {
           // {...register("usuario")}
           placeholder="Digite seu Usuario aqui"
         />
-      </div>
-      <div>
+      </DivImputsStyle>
+      <DivImputsStyle>
         <TextField
+        fullWidth
           label="E-mail"
           variant="standard"
           type="email"
@@ -44,9 +53,10 @@ export const FormRegister = () => {
           // {...register("email")}
           placeholder="Digite seu email aqui"
         />
-      </div>
-      <div>
+      </DivImputsStyle>
+      <DivImputsStyle>
         <TextField
+          fullWidth
           label="Senha"
           variant="standard"
           type="password"
@@ -54,9 +64,10 @@ export const FormRegister = () => {
           // {...register("senha")}
           placeholder="Digite sua senha aqui"
         />
-      </div>
-      <div>
+      </DivImputsStyle>
+      <DivImputsStyle>
         <TextField
+          fullWidth
           label="Avatar"
           variant="standard"
           type="file"
@@ -66,8 +77,13 @@ export const FormRegister = () => {
           // onChange={handleFileChange}
           // accept="image/*"
         />
-      </div>
-
+      </DivImputsStyle>
+      <DivBtsRegisterStyle>
+        <button className="bts">Cadastrar</button>
+        <span>
+          Já possui conta? <ButtonLoginStyle onClick={click} >Logar</ButtonLoginStyle>
+        </span>
+      </DivBtsRegisterStyle>
     </FormRegisterStyle>
   );
 };

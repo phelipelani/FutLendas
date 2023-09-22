@@ -10,3 +10,7 @@ export const MainStyled = styled.main`
   width: 100vw;
   height: 100vh;
 `;
+
+export const ContainerMain = styled.div`
+
+`
