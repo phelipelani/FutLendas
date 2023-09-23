@@ -5,6 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { LogSchema } from "./LoginSchema";
 import { TextField } from "@mui/material";
 import { FormStyle } from "./styled";
+import { useNavigate } from "react-router-dom";
 
 export const FormLogin = () => {
   const { UserLogin, setLod, lod } = useContext(AuthenticUserContext);
@@ -18,6 +19,10 @@ export const FormLogin = () => {
   function submit(data) {
     UserLogin(data, setLod);
   }
+  const navigate = useNavigate();
+  const login = () => {
+    navigate("/perfil")
+  };
 
   return (
     <FormStyle onSubmit={handleSubmit(submit)}>
@@ -30,7 +35,7 @@ export const FormLogin = () => {
           variant="standard"
           {...register("usuario")}
         />
-        {errors.usuario && <h5>{errors.usuario.message}</h5>}
+        {errors.usuario && <h6>{errors.usuario.message}</h6>}
       </div>
       <div id="senha">
         <TextField
@@ -41,9 +46,9 @@ export const FormLogin = () => {
           {...register("senha")}
           placeholder="Digite sua senha aqui"
         />
-        {errors.senha && <h5>{errors.senha.message}</h5>}
+        {errors.senha && <h6>{errors.senha.message}</h6>}
       </div>
-      <button className="bts btnLogin" type="submit" disabled={lod}>
+      <button click={login} className="bts btnLogin" type="submit" disabled={lod}>
         {" "}
         {lod ? "Entrando ..." : "Entrar"}{" "}
       </button>

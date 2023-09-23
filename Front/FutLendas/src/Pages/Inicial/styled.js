@@ -4,6 +4,7 @@ import { tema } from "../../GlobalStyleds";
 export const ContentHome = styled.div`
   box-sizing: border-box;
   display: flex;
+  flex-direction:column;
   align-items: center;
   justify-content: center;
   width: 100vw;
@@ -53,6 +54,9 @@ export const Contentbtns = styled.div`
     height: auto;
   }
   h5 {
-    margin: 0;
+    margin: 1rem;
   }
+  h6{
+  margin: 0;
+color: ${tema.error};}
 `;
