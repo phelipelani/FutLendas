@@ -8,6 +8,7 @@ import {
 } from "./styled";
 import Logo from "../../Assets/Logo.png";
 import { FooterComponent } from "../../Components/Footer";
+import { BannerUsuario } from "../../Components/DadosUsuario";
 
 export const PerfilPage = () => {
   return (
@@ -27,7 +28,7 @@ export const PerfilPage = () => {
       </CabecalhoStyled>
       <ContainerStyled>
         <div className="infoLateralEsquerda"></div>
-        <div className="infoPrincipal"></div>
+        <BannerUsuario />
         <div className="infoLateralDireita"></div>
       </ContainerStyled>
 
