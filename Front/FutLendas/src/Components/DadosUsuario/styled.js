@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { tema } from "../../GlobalStyleds";
 
+
+
 export const ContainerPerfilUser = styled.div`
   box-sizing: border-box;
   width: 45%;
@@ -8,7 +10,6 @@ export const ContainerPerfilUser = styled.div`
   background-color: ${tema.corPrimariaDesfoque};
   border-radius: 10px;
   display: flex;
-  flex-direction: column;
   padding: 0 0 0 1rem;
   align-items: center;
   box-shadow: 0px 1px 2px 1px ${tema.corPrimaria};
@@ -28,9 +29,10 @@ export const ContainerPerfilInfosName = styled.div`
 `;
 export const ContainerSessaoInfos = styled.div`
   display: flex;
-  width: 100%;
-  height: 90%;
+  width: 70%;
+  height: 100%;
   box-sizing: border-box;
+  flex-direction: column;
 `;
 
 export const ContainerPerfilInfos = styled.div`
@@ -48,17 +50,3 @@ export const ContainerPerfilInfosDados = styled.div`
   }
 `;
 
-export const ContainerPerfilFoto = styled.div`
-  width: 40%;
-  height: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-`;
