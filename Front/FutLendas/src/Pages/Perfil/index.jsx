@@ -1,17 +1,23 @@
-import { MainStyled } from "./styled";
+import {
+  ContainerStyled,
+  MainStyled,
+} from "./styled";
+
+import { FooterComponent } from "../../Components/Footer";
+import { BannerUsuario } from "../../Components/DadosUsuario";
+import { Cabecalho } from "../../Components/Cabecalho";
 
 export const PerfilPage = () => {
   return (
-    <>
-      <nav></nav>
-      <MainStyled>
-        <div className="container">
-          <div className="infoLateralEsquerda"></div>
-          <div className="infoPrincipal"></div>
-          <div className="infoLateralDireita"></div>
-        </div>
-      </MainStyled>
-      <footer></footer>
-    </>
+    <MainStyled>
+      <Cabecalho />
+      <ContainerStyled>
+        <div className="infoLateralEsquerda"></div>
+        <BannerUsuario />
+        <div className="infoLateralDireita"></div>
+      </ContainerStyled>
+
+      <FooterComponent />
+    </MainStyled>
   );
 };
