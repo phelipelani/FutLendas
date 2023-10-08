@@ -1,0 +1,46 @@
+# Arquivos temporários e diretórios
+*.pyc
+__pycache__/
+*.db
+*.sqlite3
+*.log
+*.swp
+*.swo
+*.swn
+*.swm
+
+# Diretório do ambiente virtual (se você estiver usando um)
+venv/
+# Arquivos gerados pelo Django
+*.pot
+*.pyo
+__init__.pyc
+db.sqlite3
+db.sqlite3-journal
+
+# Arquivos de mídia (imagens, uploads de usuários, etc.)
+media/
+
+# Diretório onde os arquivos estáticos são coletados
+static/
+
+# Arquivos de configuração de IDEs e editores
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+.svn/
+*.swp
+
+# Arquivos de cache
+.cache/
+
+# Arquivos de compilação e logs
+*.log
+build/
+dist/
+logs/
+*.egg-info/
+__pycache__/
+.pytest_cache/
