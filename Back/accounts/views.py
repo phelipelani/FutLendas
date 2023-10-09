@@ -3,10 +3,6 @@ from rest_framework.views import APIView, Request, Response, status
 from accounts.models import Account
 from accounts.serializers import AccontSerializer
 
-
-
-
-
 class AccountView(APIView):
     def get (self, request:Request)-> Response:
         accounts = Account.objects.all()
