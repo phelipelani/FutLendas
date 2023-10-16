@@ -8,7 +8,7 @@ export const Cabecalho = () => {
       </CabecalhoLogoStyled>
       <CabecalhoNavStyled>
         <p>Perfil</p>
-        <p>Ligas</p>
+        <p>Futlendas</p>
         <p>Cartolendas</p>
       </CabecalhoNavStyled>
       <CabecalhoExitStyled>

@@ -1,5 +1,4 @@
 import {
-  ContainerPerfilFoto,
   ContainerPerfilInfos,
   ContainerPerfilInfosDados,
   ContainerPerfilInfosName,
@@ -7,7 +6,9 @@ import {
   ContainerSessaoInfos,
 } from "./styled";
 
-import { DropZonePerfil } from "../DragInDrop/Perfil";
+import PhotoDragAndDrop from "../DragInDrop/Perfil";
+
+
 
 export const BannerUsuario = () => {
   return (
@@ -25,7 +26,7 @@ export const BannerUsuario = () => {
           </ContainerPerfilInfosDados>
         </ContainerPerfilInfos>
       </ContainerSessaoInfos>
-      <DropZonePerfil />
+      <PhotoDragAndDrop />
     </ContainerPerfilUser>
   );
 };

@@ -6,7 +6,7 @@ export const CabecalhoStyled = styled.div`
   width: 90%;
   height: 15%;
   margin: 1rem;
-  font-size: 1.5rem;
+  font-size: 4vw;
 `;
 
 export const CabecalhoLogoStyled = styled.div`
